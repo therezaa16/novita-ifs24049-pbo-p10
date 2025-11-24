@@ -1,7 +1,7 @@
 ## Global Variables
 @BaseUrl = http://localhost:8080/api
 
-@authToken = Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiIwMTYwOGJkYy1lYTM0LTQ2M2MtOTI1My05MTE5ZjhhODk3NDkiLCJpYXQiOjE3NjM5NDk3NTAsImV4cCI6MTc2Mzk1Njk1MH0.nehSVtMV0zbhfXMqLkqArA1hXNtwwjU7R3wFJmEQiaQlwCCLJ2Bq2nLmmgxZN4kH
+@authToken = Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiIyYTI2ZTM5OS03MzVlLTQ4MTAtOGU4Yi1jYTlhMTk0YzdjOTAiLCJpYXQiOjE3NjM5NzE5NjUsImV4cCI6MTc2Mzk3OTE2NX0.PXrT4uG-gcc2wCJ3JiQD2BfDb5z_LE3Ed7bT5m9_61kzpq3TdOTegGweE7dv8xt0
 
 ## Cash Flows
 ## ---------------------------------

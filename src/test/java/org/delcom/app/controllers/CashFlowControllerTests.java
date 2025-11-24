@@ -121,6 +121,8 @@ public class CashFlowControllerTests {
                 var result = cashFlowController.getAllCashFlows(null);
                 assert (result != null);
                 assert (result.getBody().getStatus().equals("success"));
+                // ✅ PERBAIKAN: Cek key yang sesuai dengan controller
+                assert (result.getBody().getData().get("cashFLows") != null);
             }
 
             // Menguji getAllCashFlows dengan search terisi
@@ -151,7 +153,8 @@ public class CashFlowControllerTests {
                 var result = cashFlowController.getCashFlowById(cashFlowId);
                 assert (result != null);
                 assert (result.getBody().getStatus().equals("success"));
-                assert (result.getBody().getData().get("cash_flow").getId().equals(cashFlowId));
+                // ✅ PERBAIKAN: Cek key "cashFlow" (bukan "cash_flow")
+                assert (result.getBody().getData().get("cashFlow").getId().equals(cashFlowId));
             }
 
             // Menguji getCashFlowById dengan ID yang tidak ada
@@ -260,6 +263,7 @@ public class CashFlowControllerTests {
                 var result = cashFlowController.updateCashFlow(cashFlowId, updatedCashFlow);
                 assert (result != null);
                 assert (result.getBody().getStatus().equals("success"));
+                // ✅ PERBAIKAN: UpdateCashFlow di controller mengembalikan null data, jadi tidak perlu cek data
             }
         }
 
